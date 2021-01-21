@@ -1,8 +1,61 @@
-UTK Repository Infrastructure
-=============================
+Overall Infrastructure, Preservation, and Interoperability
+==========================================================
+
+Introduction
+------------
+
+As we set out to develop our next generation repository infrastructure, the University of Tennessee Libraries intends to launch
+two new repository applications (one for digital collections and one as an institutional repository). We intend for
+these applications to serve content to a variety of other systems.
 
 .. image:: ../images/overall_overview.png
 
+This document describes our current plans and intentions for our repository applications and how these applications will
+interoperate with other services.
+
+Preservation Infrastructure
+---------------------------
+
+In our next generation repository service, several core technologies will be used to meet our preservation needs and
+requirements:
+
 .. image:: ../images/preservation_overview.png
+
+Similar to our current infrastructure, at the heart of our is Fedora. Instead of Fedora 3 as we currently use, our next
+generation service must use Fedora 4 or later with the opportunity to migrate to Fedora 6 as soon as possible. Fedora4
+or later is important to us for a few reasons.  First, Fedora 4, 5, 6 is built on Linked Data Platform.  This lets us
+store all metadata about a digital object in a :code:`fedora:Resource`. It then let's us relate that
+:code:`fedora:Resource` to other resources using `Portland Common Data Model <https://github.com/duraspace/pcdm/wiki>`_.
+
+While Fedora 6 is not a requirement for our next repository in order to go live, having a migration path and plan to
+Fedora 6 is a requirement.  Fedora 6 is important to us for a few reasons. First, Fedora 6 has much better performance
+and scale than Fedora 4 or 5.  This is because Fedora 6 drops its' :code:`ModeShape` dependency.  This techonology has
+declined in popularity greatly since Fedora 4 originally launched and is the primary source for performance and scale
+issues experienced in Fedora 4 and 5. More importantly, Fedora 6 helps enhance long-term preservation by implementing the
+`Oxford Common File Layout (OCFL)<https://ocfl.io/1.0/spec/>`_.
+
+OCFL is a simple, non-proprietary, specified, open standards approach to the layout of the preservation persistence
+layer in a repository service. It is designed to be file system agnostic and describes how to layout content on whatever
+storage media you choose whether it be bare metal or cloud infrastructure. OCFL enhances long-term preservation in
+several ways. First, it is built with **parseability** in mind so that **humans** can understand the content in a disaster
+recovery situtation.  This greatly improves our current pair tree infrastructure. Similarly, **parseability** ensures
+machine readability which allows for simple applications to be placed on top of an existing OCFL storage root. Next,
+OCFL allows for **versioning**. This allows for changes to be tracked over time similar to what we do now. OCFL imporves
+on versioning by implementing **forward delta**.  Similar to a diff, forward delta allows for just the difference in a
+resource to be kept rather than all additional files.  This feature will help us greatly with our workflows when writing
+to DuraCloud Chronopolis. OCFL is also built with **robustness** in mind.  OCFL is designed to protect your repository
+from errors, corruption, and migration between storage media (bare metal to cloud and vice versa). This is because OCFL's
+strong fixity and use of checksums.  Content can easiliy be validated using its :code:`inventory.json` files. Furthermore,
+objects are completely self contained.  This means that everything a human would need to understand a digital object and
+its relationships is stored in the OCFL object. Finally, OCFL is focused on **completeness** and is designed to ensure
+that a repository can be completely restored by reading in content according to OCFL format and its inventory files.
+Unlike Trusted Digital Repositories (ISO 16363), NDSA Levels of Preservation, and Open Archival Information Systems
+(OAIS), OCFL does not simply talk about what repositories should do, but what the repository will do.
+
+
+
+    **While these standards talk about what you should do, OCFL explains how to do it.**
+Interoperability Between Services
+---------------------------------
 
 .. image:: ../images/interoperability_overview.png
