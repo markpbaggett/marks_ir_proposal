@@ -32,7 +32,7 @@ Fedora 6 is a requirement.  Fedora 6 is important to us for a few reasons. First
 and scale than Fedora 4 or 5.  This is because Fedora 6 drops its' :code:`ModeShape` dependency.  This techonology has
 declined in popularity greatly since Fedora 4 originally launched and is the primary source for performance and scale
 issues experienced in Fedora 4 and 5. More importantly, Fedora 6 helps enhance long-term preservation by implementing the
-`Oxford Common File Layout (OCFL)<https://ocfl.io/1.0/spec/>`_.
+`Oxford Common File Layout (OCFL) <https://ocfl.io/1.0/spec/>`_.
 
 OCFL is a simple, non-proprietary, specified, open standards approach to the layout of the preservation persistence
 layer in a repository service. It is designed to be file system agnostic and describes how to layout content on whatever
@@ -52,9 +52,20 @@ that a repository can be completely restored by reading in content according to 
 Unlike Trusted Digital Repositories (ISO 16363), NDSA Levels of Preservation, and Open Archival Information Systems
 (OAIS), OCFL does not simply talk about what repositories should do, but what the repository will do.
 
+We want to ensure that our :code:`fedora:Resources` / :code:`OCFL objects` are available for perpetuity regardless of
+what happens to our digital library program, applications, or university.  For that reason, we want to deposit our objects
+in a dark archive.  For us, this is DuraCloud Chronopolis.  We only deposit "preservation" objects there.  Any proxies or
+derivatives related to the object are not stored there.
 
+Last year, a working group between Special Collections and Digital Initiatives wrote
+`TOWARD A BORN-DIGITAL PRESERVATION PROGRAM AT UNIVERSITY OF TENNESSEE LIBRARIES <https://docs.google.com/document/d/1AifVR1aF8V6gC6CCA7yWcZHTZOvQv8cOotX1oHd-K-I/edit#heading=h.j8c5tbonpgjs>`_.
+This document describes the needs of Special Collections in order to launch a born digital program.  It ultimately led
+us to select Archivematica as a solution for more active preservation needs.  By active preservation, we mostly mean the
+ability to migrate files when we were not the creators and long-term preservation was not likely in the mind of the
+creator.  In the system, an archivist ingests a born digital item and an AIP and a DIP is generated.  The archivist
+would also write and acquisition and finding aid in ArchivesSpace. Ultimately, the AIP and DIP should be deposited in
+Fedora and ultimately DuraCloud AWS. The DIP should also be made available in ArchivesSpace.
 
-    **While these standards talk about what you should do, OCFL explains how to do it.**
 Interoperability Between Services
 ---------------------------------
 
