@@ -1,4 +1,4 @@
 Overview
 ========
 
-.. image:: ../images/overview.rst
+.. image:: ../images/overview.png

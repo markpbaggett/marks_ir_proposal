@@ -1,4 +1,8 @@
 Restrictions on Access
 ======================
 
-.. image:: ../images/restrictions.rst
+.. image:: ../images/restrictions.png
+
+
+Add tombstone / withdrawal
+Change label
