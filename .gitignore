@@ -1,3 +1,4 @@
 .idea/*
 docs/build/
 docs/make.bat
+docs/source/images/*.png
