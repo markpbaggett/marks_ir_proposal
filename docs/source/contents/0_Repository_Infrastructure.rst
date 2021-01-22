@@ -76,4 +76,39 @@ in Chronopolis.
 Interoperability Between Services
 ---------------------------------
 
+As we move towards a new repository system, UT Libraries Digital Initiatives plans to focus on a few standards for
+interoperability and to serve data for specific use cases: :code:`IIIF` and :code:`OAI-PMH`.
+
 .. image:: ../images/interoperability_overview.svg
+
+We see :code:`IIIF` and its specifications as the future for how we provide interoperability between our services. In
+the diagram above, two IIIF specifications are mentioned specifically: the :code:`IIIF Image API` and the
+:code:`IIIF Presentation API`. The :code:`IIIF Image API` transforms images on the server and allows users of clients to
+only get what they need.  A potential use case for this is linking digital objects in a finding aid in ArchivesSpace to
+a digital object in a repository service.  To help users get a brief view of what this may be, an image can be generated
+on the fly in ArchivesSpace using the IIIF API:
+
+.. image:: ../images/iiif_image_api_archivespace.png
+
+In addition to the image api, we see the :code:`IIIF Presentation API` as the primary way we will serve digital objects
+between systems to meet a variety of user and client needs. The :code:`IIIF Presentation API` allows us to create recipes
+for different content models and use cases so that our content can be served in viewers in ways that best fit our needs.
+In order to think about serving content across different systems with the :code:`IIIF Presentation API`, UT Libraries
+Digital Initiatives maintains a `UTK IIIF Cookbook <https://utk-iiif-cookbook.readthedocs.io/en/latest/>`_. Here is an
+example of an "embedded recipe" for thinking about serving our oral histories:
+
+.. raw:: html
+
+    <iframe src="https://uv-v3.netlify.app/uv/uv.html#?manifest=https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json&c=undefined&m=0&s=0&cv=0&rid=undefined" width="560" height="420" allowfullscreen frameborder="0"></iframe>
+
+The sample manifest can be found `here <https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json>`_.
+
+:code:`OAI-PMH` is very much a place holder for us and a legacy technology we will eventually abandon.
+While we see IIIF as our future and plan to focus on it heavily, we realize that we are still in need of :code:`OAI-PMH`.
+This technology is what we use to serve metadata to our aggregation service and on to services such as DPLA, tn.dp.la,
+and our Ex Libris Primo instance.  While the technology is very old, we currently rely on this protocol heavily for sharing
+to external services.  While it would be possible to move away from it entirely, it would be expensive to do so now due
+to time and limitations of external services.  If we moved away from OAI-PMH for DPLA, it would require DPLA to rewrite
+all normalization and would be outside of our control.  Similarly, while other solutions exist for Ex Libris Primo for
+external discovery import profiles, these have never been explored or implemented here and would require reenvisioning
+and a total reimplementation of workflows.
