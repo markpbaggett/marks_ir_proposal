@@ -1,4 +1,4 @@
 Metadata and Internal Services
 ==============================
 
-.. image:: ../images/metadata.png
+.. image:: ../images/metadata.svg

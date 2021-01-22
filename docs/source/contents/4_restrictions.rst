@@ -1,7 +1,7 @@
 Restrictions on Access
 ======================
 
-.. image:: ../images/restrictions.png
+.. image:: ../images/restrictions.svg
 
 
 Add tombstone / withdrawal

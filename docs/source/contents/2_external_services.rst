@@ -1,4 +1,4 @@
 External Services and Interoperability
 ======================================
 
-.. image:: ../images/external_services.png
+.. image:: ../images/external_services.svg

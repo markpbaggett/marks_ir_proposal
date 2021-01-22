@@ -1,4 +1,4 @@
 Overview
 ========
 
-.. image:: ../images/overview.png
+.. image:: ../images/overview.svg

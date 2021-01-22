@@ -8,7 +8,7 @@ As we set out to develop our next generation repository infrastructure, the Univ
 two new repository applications (one for digital collections and one as an institutional repository). We intend for
 these applications to serve content to a variety of other systems.
 
-.. image:: ../images/overall_overview.png
+.. image:: ../images/overall_overview.svg
 
 This document describes our current plans and intentions for our repository applications and how these applications will
 interoperate with other services.
@@ -19,7 +19,7 @@ Preservation Infrastructure
 In our next generation repository service, several core technologies will be used to meet our preservation needs and
 requirements:
 
-.. image:: ../images/preservation_overview.png
+.. image:: ../images/preservation_overview.svg
 
 Similar to our current infrastructure, at the heart of our is Fedora. Instead of Fedora 3 as we currently use, our next
 generation service must use Fedora 4 or later with the opportunity to migrate to Fedora 6 as soon as possible. Fedora4
@@ -76,4 +76,4 @@ in Chronopolis.
 Interoperability Between Services
 ---------------------------------
 
-.. image:: ../images/interoperability_overview.png
+.. image:: ../images/interoperability_overview.svg
