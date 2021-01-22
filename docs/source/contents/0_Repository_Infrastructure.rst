@@ -66,6 +66,13 @@ creator.  In the system, an archivist ingests a born digital item and an AIP and
 would also write and acquisition and finding aid in ArchivesSpace. Ultimately, the AIP and DIP should be deposited in
 Fedora and ultimately DuraCloud AWS. The DIP should also be made available in ArchivesSpace.
 
+Currently, our plans are to have two separate DuraCloud solutions:  one for dark archiving and one for "dim" archiving.
+The dark archiving solution, Chronopolis, is for preservation objects only and for materials that are done and meet our
+requirements for dark archiving.  The "dim" archiving solution, AWS, is for things where there are questions or that we
+in Digital Initiatives have limited control.  For instance, if a preservation object may change, we'd deposit to AWS
+instead of Chronopolis.  Only when something is "done" and "complete" from a preservation standard should it be deposited
+in Chronopolis.
+
 Interoperability Between Services
 ---------------------------------
 
