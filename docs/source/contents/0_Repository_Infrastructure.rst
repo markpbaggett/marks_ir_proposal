@@ -103,12 +103,17 @@ example of an "embedded recipe" for thinking about serving our oral histories:
 
 The sample manifest can be found `here <https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json>`_.
 
-:code:`OAI-PMH` is very much a place holder for us and a legacy technology we will eventually abandon.
-While we see IIIF as our future and plan to focus on it heavily, we realize that we are still in need of :code:`OAI-PMH`.
-This technology is what we use to serve metadata to our aggregation service and on to services such as DPLA, tn.dp.la,
-and our Ex Libris Primo instance.  While the technology is very old, we currently rely on this protocol heavily for sharing
-to external services.  While it would be possible to move away from it entirely, it would be expensive to do so now due
-to time and limitations of external services.  If we moved away from OAI-PMH for DPLA, it would require DPLA to rewrite
-all normalization and would be outside of our control.  Similarly, while other solutions exist for Ex Libris Primo for
-external discovery import profiles, these have never been explored or implemented here and would require reenvisioning
-and a total reimplementation of workflows.
+While we intend to use :code:`OAI-PMH` for the time being, we view it as a legacy technology that we will eventually
+abandon. Instead, we believe that the `IIIF Change Discovery API <https://iiif.io/api/discovery/0.3/>`_ is how we will
+eventually find and share metadata and the objects that the metadata represents between services. We recognize that the
+API is in beta and not stable enough to develop against, we feel strongly that this is where we and other libraries will
+eventually implement for sharing.
+
+While we see IIIF as our future and plan to focus on it heavily, we realize that we are still in
+need of :code:`OAI-PMH` for the near future. This technology is what we use to serve metadata to our aggregation service
+and on to services such as DPLA, tn.dp.la, and our Ex Libris Primo instance.  While the technology is very old, we
+it is what our current external services rely on.  While it would be possible to move away from it entirely, it would be
+expensive to do so at this time. For instance, if we moved away from OAI-PMH for DPLA, it would require DPLA to rewrite
+all normalization and this task would be entirely outside our control.  Similarly, while other solutions exist for Ex
+Libris Primo for external discovery import profiles, these have never been explored or implemented here and would require
+reenvisioning and a total reimplementation of workflows.
