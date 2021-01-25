@@ -30,8 +30,8 @@ services:
 * **ORCiD**:  we would like to be able to pull publications from the profiles of authors affiliated with UTK. Similarly, we'd like to be able to populate ORCiD profiles with content from our repository.
 * **Unpaywall**: we would like to populate our repository based on open access discovery in the `Unpaywall <https://unpaywall.org/>`_ service.
 * **Crossref**: we would like to populate the repository with content from university affiliated researchers in Crossref based on existing metadata.
-* Symplectic Elements: we would like to allow faculty to populate the repository based on content in their Symplectic Elements profile.
-* Ex Libris Primo: we would like to share our metadata with our OneSearch index based on Ex Libris Primo via OAI-PMH.
+* **Symplectic Elements**: we would like to allow faculty to populate the repository based on content in their Symplectic Elements profile.
+* **Ex Libris Primo**: we would like to share our metadata with our OneSearch index based on Ex Libris Primo via OAI-PMH.
 
 Finally, we would like to help our students, researchers, and faculty to make informed decisions about their rights to
 add their publications by integrating with `Sherpa Romeo <https://v2.sherpa.ac.uk/romeo/>`_.
