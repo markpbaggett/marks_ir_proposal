@@ -4,7 +4,7 @@ Restrictions on Access
 In our next generation institutional repository, certain content models must be flexible towards restrictions on access.
 The diagram below describes this:
 
-.. image:: ../images/restrictions.svg
+.. image:: ../images/restrictions.png
 
 When an electronic thesis or dissertation is published, its metadata should always be publically available. Its primary
 object such as a PDF and supplementary files may be embargoed and restricted from access for up to six years.  When this

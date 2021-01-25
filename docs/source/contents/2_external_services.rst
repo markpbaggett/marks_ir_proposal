@@ -5,7 +5,7 @@ As stated in the functional requirements section of our RFP, there are a number 
 application to interoperate with.  While some are more important than others and only a few are requirements, the diagram
 below lists them:
 
-.. image:: ../images/externalservices.svg
+.. image:: ../images/externalservices.png
 
 For authentication, CAS or Shibboleth is a must have for us to be able to go live. Having CAS for authentication is in
 line with expectations from central IT, keeps us out of the authentication game, and allows our students, faculty, and

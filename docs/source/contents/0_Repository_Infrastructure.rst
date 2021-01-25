@@ -8,7 +8,7 @@ As we set out to develop our next generation repository infrastructure, the Univ
 two new repository applications (one for digital collections and one as an institutional repository). We intend for
 these applications to serve content to a variety of other systems.
 
-.. image:: ../images/overall_overview.svg
+.. image:: ../images/overall_overview.png
 
 This document describes our current plans and intentions for our repository applications and how these applications will
 interoperate with other services.
@@ -19,7 +19,7 @@ Preservation Infrastructure
 In our next generation repository service, several core technologies will be used to meet our preservation needs and
 requirements:
 
-.. image:: ../images/preservation_overview.svg
+.. image:: ../images/preservation_overview.png
 
 Similar to our current infrastructure, at the heart of our is Fedora. Instead of Fedora 3 as we currently use, our next
 generation service must use Fedora 4 or later with the opportunity to migrate to Fedora 6 as soon as possible. Fedora4
@@ -79,7 +79,7 @@ Interoperability Between Services
 As we move towards a new repository system, UT Libraries Digital Initiatives plans to focus on a few standards for
 interoperability and to serve data for specific use cases: :code:`IIIF` and :code:`OAI-PMH`.
 
-.. image:: ../images/interoperability_overview.svg
+.. image:: ../images/interoperability_overview.png
 
 We see :code:`IIIF` and its specifications as the future for how we provide interoperability between our services. In
 the diagram above, two IIIF specifications are mentioned specifically: the :code:`IIIF Image API` and the

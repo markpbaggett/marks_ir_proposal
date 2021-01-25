@@ -8,7 +8,7 @@ different requirements.  While we want these applications to be separate, we are
 repository or search index. If we were to use the same search index, we would require that we could limit results to one
 application as a default search.
 
-.. image:: ../images/overview.svg
+.. image:: ../images/overview.png
 
 While we are not opposed to ActiveFedora initially, we see value in our applications ultimately interacting with Fedora,
 the search, index, and other services with `valkyrie <https://github.com/samvera/valkyrie>`_.
