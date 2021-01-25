@@ -17,7 +17,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'UTK Institutional Repository Infrastructure'
+project = 'Next Generation Repository Infrastructure at the University of Tennessee'
 copyright = '2021, Mark Baggett'
 author = 'Mark Baggett'
 
