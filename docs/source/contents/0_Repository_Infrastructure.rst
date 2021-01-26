@@ -73,6 +73,10 @@ in Digital Initiatives have limited control.  For instance, if a preservation ob
 instead of Chronopolis.  Only when something is "done" and "complete" from a preservation standard should it be deposited
 in Chronopolis.
 
+Finally, Digital Initiatives is interested in developing a web archiving service.  While we are still in the early
+planning stages, we are currently planning to use Heritrix for WARC generation and adding those objects to our Fedora
+repository for delivery and bit level preservation.  No decisions have been made on how WARCs will be emulated.
+
 Interoperability Between Services
 ---------------------------------
 
