@@ -6,7 +6,7 @@ Introduction
 
 As we set out to develop our next generation repository infrastructure, the University of Tennessee Libraries intends to launch
 two new repository applications (one for digital collections and one as an institutional repository). We intend for
-these applications to serve content to a variety of other systems.
+these applications to serve content to and interoperate with a variety of other systems.
 
 .. image:: ../images/overall_overview.png
 
@@ -64,13 +64,15 @@ us to select Archivematica as a solution for more active preservation needs.  By
 ability to migrate files when we were not the creators and long-term preservation was not likely in the mind of the
 creator.  In the system, an archivist ingests a born digital item and an AIP and a DIP is generated.  The archivist
 would also write and acquisition and finding aid in ArchivesSpace. Ultimately, the AIP and DIP should be deposited in
-Fedora and ultimately DuraCloud AWS. The DIP should also be made available in ArchivesSpace.
+Fedora and ultimately DuraCloud Chronopolis. The DIP should also be managed by Fedora and made available for access in
+applications like ArchivesSpace.
 
-Currently, our plans are to have two separate DuraCloud solutions:  one for dark archiving and one for "dim" archiving.
+Currently, our plans are to support two DuraCloud solutions:  one for dark archiving and one for "dim" archiving.
 The dark archiving solution, Chronopolis, is for preservation objects only and for materials that are done and meet our
-requirements for dark archiving.  The "dim" archiving solution, AWS, is for things where there are questions or that we
-in Digital Initiatives have limited control.  For instance, if a preservation object may change, we'd deposit to AWS
-instead of Chronopolis.  Only when something is "done" and "complete" from a preservation standard should it be deposited
+requirements for dark archiving.  The "dim" archiving solution, DuraCloud AWS, is for objects that are worth of longterm preservation
+but are not finished and ready for dark archiving.  For instance, if a preservation object is likely to change or we have
+no way of knowing if it may change, we will deposit that object to DuraCloud AWS instead of Chronopolis.  Only when
+something is "done" and "complete" from a preservation standard should it be deposited
 in Chronopolis.
 
 Finally, Digital Initiatives is interested in developing a web archiving service.  While we are still in the early
