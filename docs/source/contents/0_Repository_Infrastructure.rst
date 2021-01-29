@@ -4,26 +4,37 @@ Roadmap for Infrastructure, Preservation, and Interoperability
 Introduction
 ------------
 
-As we set out to develop our next generation repository infrastructure, the University of Tennessee Libraries intends to launch
-two new repository applications (one for digital collections and one as an institutional repository). We intend for
-these applications to serve content to and interoperate with a variety of other systems.
+As we approach migrations from Digital Commons and Fedora 3, the University of Tennessee Libraries intends to launch
+two new repository applications: one for digital collections and one for an institutional repository. We intend for
+both to be built on Hyrax engine and to serve content to and interoperate with a variety of other applications that we
+as a unit will utilize and invest in.
 
 .. image:: ../images/overall_overview.png
 
-This document describes our current plans and intentions for our repository applications and how these applications will
-interoperate with other services.
+This document describes our current plans and intentions for our repository applications infrastructure. It will explain
+how we envision our preservation operations will work and how our services will interoperate.
 
 Preservation Infrastructure
 ---------------------------
 
-In our next generation repository service, several core technologies will be used to meet our preservation needs and
-requirements:
+Digital preservation is arguably our unit's most important responsibility. It is an activity that deserves thoughtful
+planning to ensure our digital objects are available and secure for perpetuity. As we move towards the future, we have
+numerous preservation use cases that require our attention:  cultural heritage materials from our digital collections,
+scholarly and creative contributions from our institutional repository, born digital materials that come to special
+collections from outside donors who likely created files with no plans for longterm preservation, and digital exhibits and
+other websites that require webarchiving.  In order to ensure that these materials will be protected for years to come,
+we endeavor to use multiple forms of digital preservation activities and several core technologies.
 
 .. image:: ../images/preservation_overview.png
 
-Similar to our current infrastructure, at the heart of our is Fedora. Instead of Fedora 3 as we currently use, our next
-generation service must use Fedora 4 or later with the opportunity to migrate to Fedora 6 as soon as possible. Fedora4
-or later is important to us for a few reasons.  First, Fedora 4, 5, 6 is built on Linked Data Platform.  This lets us
+Similar to our current infrastructure, at the heart of our digital assets management and bit-level preservation solution
+is Fedora. All our objects and their associated binaries should be managed together with minimal descriptive metadata
+and be subject to bit-level preservation. Bit-level preservation is the lowest form of digital preservation and refers
+to literally preserving the bits that make up a digital object. As stated in our Digital Preservation Policy Framework,
+bit-level preservation activities include maintaining onsite and offsite backup copies, virus checking, periodic
+refreshment by copying files to new storage media, and fixity-checking. Instead of Fedora 3 as we currently use, our
+next generation service must use Fedora 4 or later with the opportunity to migrate to Fedora 6 as soon as possible.
+Fedora 4 or later is important to us for a few reasons.  First, Fedora 4, 5, 6 is built on Linked Data Platform.  This lets us
 store all metadata about a digital object in a :code:`fedora:Resource`. It then let's us relate that
 :code:`fedora:Resource` to other resources using `Portland Common Data Model <https://github.com/duraspace/pcdm/wiki>`_.
 
