@@ -93,8 +93,11 @@ repository for delivery and bit level preservation.  No decisions have been made
 Interoperability Between Services
 ---------------------------------
 
-As we move towards a new repository system, UT Libraries Digital Initiatives plans to focus on a few standards for
-interoperability and to serve data for specific use cases: :code:`IIIF` and :code:`OAI-PMH`.
+While ensuring preservation of and providing access to our digital objects is of upmost importance, we also need to
+seve these objects to other technologies. As we move towards a new repository system, we plans to focus on a few
+standards and services for interoperability. Longterm, we intend for :code:`IIIF` and its various specifications to be
+the focus for interoperability. Because some of the IIIF specifications are still in their infancy, we will use :code:`OAI-PMH`
+to a limited extent in the short term.  The diagram below describes this:
 
 .. image:: ../images/interoperability_overview.png
 
