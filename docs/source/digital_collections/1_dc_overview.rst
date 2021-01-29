@@ -1,8 +1,8 @@
-Institutional Repository Overview
-=================================
+Digital Collections Overview
+----------------------------
 
 As described in `Overall Infrastructure, Preservation, and Interoperability <0_Repository_Infrastructure.rst>`_, we
-intend to have our institutional repository in a single, Hyrax-based application. Historically, we've kept our institutional
+intend to have our digital collections repository in a single, Hyrax-based application. Historically, we've kept our institutional
 repository and digital collections repository separate as they serve different content, have different use cases, and have very
 different requirements and workflows.
 
