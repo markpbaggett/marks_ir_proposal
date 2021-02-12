@@ -11,8 +11,8 @@ as a unit will utilize and invest in.
 
 .. image:: ../images/overall_overview.png
 
-This document describes our current plans and intentions for our repository applications infrastructure. It will explain
-how we envision our preservation operations will work and how our services will interoperate.
+This section describes our current plans and intentions for how our repository applications will interoperate with one
+another and describes our approach to preservation across systems and hosted services.
 
 Preservation Infrastructure
 ---------------------------
